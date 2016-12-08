@@ -1,0 +1,30 @@
+{
+  "name": "mockingjs",
+  "version": "0.1.0",
+  "description": "A simple, basic and usable mocking library in the spirit of PHPUnit's getMockBuilder",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape -r babel-register tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryonbean/mockingjs.git"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "unit testing",
+    "testing",
+    "mocks",
+    "mocking",
+    "tdd",
+    "bdd",
+    "stub"
+  ],
+  "author": "Bryon Bean <bryonbean@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryonbean/mockingjs/issues"
+  },
+  "homepage": "https://github.com/bryonbean/mockingjs#readme"
+}

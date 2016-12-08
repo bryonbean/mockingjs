@@ -1,2 +1,2 @@
 # mockingjs
-A simple, basic and usable mocking library similar to PHPUnit's getMockBuilder.
+A simple, basic and usable mocking library in the spirit of PHPUnit's getMockBuilder.
