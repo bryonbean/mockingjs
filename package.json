@@ -1,9 +1,9 @@
 {
   "name": "mockingjs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A simple, basic and usable mocking library in the spirit of PHPUnit's getMockBuilder",
   "main": "dist/index.js",
-  "files":[
+  "files": [
     "dist/",
     "dist/index.js",
     "dist/src"
@@ -12,7 +12,7 @@
     "build": "babel index.js ./src/*.js --presets latest --out-dir dist",
     "preversion": "npm test",
     "version": "npm run build",
-    "prepublish": "npm run build",
+    "postversion": "git push && git push --tags && npm publish",
     "test": "clear && tape -r babel-register tests/**/*.js | faucet"
   },
   "repository": {
