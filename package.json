@@ -1,6 +1,6 @@
 {
   "name": "mockingjs",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A simple, basic and usable mocking library in the spirit of PHPUnit's getMockBuilder",
   "main": "dist/index.js",
   "files": [
