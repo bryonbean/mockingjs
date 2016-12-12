@@ -10,6 +10,8 @@
   ],
   "scripts": {
     "build": "babel index.js ./src/*.js --presets latest --out-dir dist",
+    "preversion": "npm test",
+    "version": "npm run build",
     "prepublish": "npm run build",
     "test": "clear && tape -r babel-register tests/**/*.js | faucet"
   },
