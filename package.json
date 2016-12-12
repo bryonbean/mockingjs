@@ -1,6 +1,6 @@
 {
   "name": "mockingjs",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "A simple, basic and usable mocking library in the spirit of PHPUnit's getMockBuilder",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,6 @@
     "browserify": "^13.1.1"
   },
   "dependencies": {
-    
+
   }
 }
