@@ -4,7 +4,7 @@
   "description": "A simple, basic and usable mocking library in the spirit of PHPUnit's getMockBuilder",
   "main": "index.js",
   "scripts": {
-    "test": "tape -r babel-register tests/**/*.js"
+    "test": "clear && tape -r babel-register tests/**/*.js | faucet"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,16 @@
   "bugs": {
     "url": "https://github.com/bryonbean/mockingjs/issues"
   },
-  "homepage": "https://github.com/bryonbean/mockingjs#readme"
+  "homepage": "https://github.com/bryonbean/mockingjs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "babelify": "^7.3.0",
+    "blue-tape": "^1.0.0",
+    "browserify": "^13.1.1"
+  },
+  "dependencies": {
+    
+  }
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MockingJS</title>
+    <script src="./bundle.js"></script>
+    <script>
+        var kat, mockKat, mock;
+        class Katniss {
+            constructor () {
+                this.foo = 42;
+                this.bar = 24;
+            }
+
+            nockArrow () {
+                return this;
+            }
+        }
+
+        kat = new Katniss();
+        mockKat = new window.MockingJS(kat);
+        mock = mockKat.getMock();
+
+    </script>
+</head>
+<body>
+</body>
+</html>
