@@ -8,6 +8,7 @@ git clone https://github.com/bryonbean/mockingjs.git
 ```
 
 ## Todo
+- [ ] Set return values for mocks
 - [ ] Create npm package
 - [ ] Refactor index.js
 - [ ] Document index.js
