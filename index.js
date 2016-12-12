@@ -3,7 +3,7 @@
 import assert from 'assert';
 import Profile from './src/Profile';
 
-export default class MockingJS {
+class MockingJS {
     constructor (target, opts = {}) {
         this.track = {}; // where profile information is kept
         this.strict = opts.strict; // strict comparison setting
@@ -112,3 +112,5 @@ MockingJS.getReflectionProperties = function (o) {
 
     return props;    
 }
+
+module.exports = MockingJS;
