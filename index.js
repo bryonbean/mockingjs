@@ -1,7 +1,7 @@
 'use strict';
 
 import assert from 'assert';
-import Profile from './src/Profile';
+import Profile from './src/profile';
 
 class MockingJS {
     constructor (target, opts = {}) {

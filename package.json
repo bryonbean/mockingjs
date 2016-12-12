@@ -13,7 +13,7 @@
     "preversion": "npm test",
     "version": "npm run build",
     "postversion": "git push && git push --tags && npm publish",
-    "test": "clear && tape -r babel-register tests/**/*.js | faucet"
+    "test": "tape -r babel-register tests/**/*.js | faucet"
   },
   "repository": {
     "type": "git",
