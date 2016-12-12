@@ -1,7 +1,7 @@
 # mockingjs
 A simple javascript mocking library.
 
-## Instalation
+## Installation
 npm install coming soon.
 ```
 git clone https://github.com/bryonbean/mockingjs.git
