@@ -88,66 +88,6 @@ export default class MockingJS {
         throw new Error('Property does not exist');
     }
 
-    _dodo (name) {
-        /*
-        let profile = this.track[name] || {},
-            count = profile.count || 0,
-            compare = this.equals.bind(this),
-            a = {};
-        a.accessed = a.called = function (n) {
-            let b = {}, 
-                result = (count === n);
-            b.times = b.time = result;
-            
-            return b;
-        };
-        a.actual = a.count = count;
-
-        if (profile.withArgs) {
-            a.at = a.on = {
-                call: function (n) {
-                    return {
-                        wasCalledWith: function () {
-                            let a1 = [...arguments],
-                                a2 = profile.withArgs[n-1];
-                            return compare(a1, a2);
-                        },
-                        calledWithoutArgs: profile.withArgs[n-1].length === 0,
-                    }
-                }
-            };
-        } else {
-            a.at = a.on = {
-                assignment: function (n) {
-                    return {
-                        wasAssigned: function (value) {
-                            let a1 = profile.values[n-1];
-                            return compare(value, a1);
-                        },
-                        actual: profile.values[n-1]
-                    }
-                }
-            }
-        }
-        return a;
-        */
-    }
-
-    equals (a, b) {
-        let compare = this.strict? assert.deepStrictEqual : assert.deepEqual;
-        try {
-            compare(a, b);
-        } catch (error) {
-            console.log(error);
-            if (error.name === 'AssertionError') {
-                
-                return false;
-            }
-            throw error;
-        }
-        return true;
-    }
-
     _createProfileInstance (tracker = {}) {
         return Object.create(MockingJS.ProfileClass.prototype,{
             profile: { value: tracker },

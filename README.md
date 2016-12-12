@@ -9,7 +9,8 @@ git clone https://github.com/bryonbean/mockingjs.git
 
 ## Todo
 - [ ] Set return values for mocks
-- [ ] Create npm package
+- [ ] Rename Profile class
+- [x] Create npm package
 - [ ] Refactor index.js
 - [ ] Document index.js
 - [ ] Refactor track property into its own class
